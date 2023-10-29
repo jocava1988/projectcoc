@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Edu TAS Beginner', cursive;
+    ;
+}
+
+.carousel-inner>.carousel-item {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.titulo {
+    text-align: center;
+    margin: 4rem;
+}
+
+.col-6 {
+    width: 100%;
+
+}
+
+.p-imagens {
+    background-color: transparent;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: white;
+    font-family: sans-serif;
+}
+
+.p-imagens2 {
+    background-color: transparent;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+}
+
+.position-absolute {
+    background-color: transparent;
+    color: black;
+}
+
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    margin-right: 5px;
+}
+
+.navbar-nav a:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.navbar-toggler {
+    color: black;
+    z-index: 999;
+}
+
+.navbar-toggler-icon {
+    fill: black;
+}
+
+
+.sectionProducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.s1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.contProduct {
+    cursor: pointer;
+}
+
+.s1 div {
+    margin-bottom: 20px;
+}
+
+.s1 div img {
+    width: 100%;
+    height: 100%;
+}
+
+.contentProduct2 { 
+    
+    margin-top: 1rem;
+}
+
+.contentProduct2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.contentB {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles {
+    height: auto;
+    display: flex;
+}
+
+.circle1 {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(20, 101, 101);
+    border-radius: 100%;
+    border: 1px solid black;
+    margin-right: 1rem;
+    z-index: 9999;
+}
+
+.circle2 {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 184, 184);
+    border-radius: 100%;
+    border: 1px solid black;
+    z-index: 9999;
+}
+
+
+@media (max-width: 600px) {
+    .s1 div {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+.contProduct {
+    position: relative;
+    width: 300px;
+    /* Ajusta el ancho según tus necesidades */
+    overflow: hidden;
+
+}
+
+ 
+.image-container {
+    position: relative;
+}
+
+.img1,
+.img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.contProduct:hover .img1 {
+    opacity: 0;
+}
+
+.contProduct:hover .img2 {
+    opacity: 1;
+}
+
+.tallas {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    /* Oculta las tallas de forma predeterminada */
+}
+
+.contProduct:hover .tallas {
+    visibility: visible;
+    /* Muestra las tallas cuando se pasa el mouse sobre el contenedor .contProduct */
+}
+
+.tallas div {
+    margin-right: 11px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Agrega sombreado */
+}
+
+.tallas div:last-child {
+    margin-right: 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+
+.h3 {
+    margin-top: 10px;
+    list-style: none;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+
+}
+
+.caja {
+
+    font-weight: bold;
+    width: 190px;
+    margin: 10px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fondo {
+    background-color: #8C7B8B;
+    padding-top: 10px;
+
+}
+
+.contenedor {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+
+}
+
+.contenedor a {
+    list-style: none;
+    margin: 1.5vw;
+    transition: all ease;
+
+}
+
+.contenedor a:hover {
+    transform: scale(1.2);
+    background-color: #F2DFF1;
+    border-radius: 40px;
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.h2 {
+    margin-top: -90px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60PX;
+}
+
+.p {
+    color: black;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.p p {
+    margin-bottom: 20px;
+
+}
+
+.productos2 {
+    margin-bottom: 4rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgfoot {
+    margin-top: 2rem;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+
+
+.misiontext{
+    font-size: 1.6rem;
+}
+.visiontext{
+    font-size: 1.6rem;
+}
+
+.misoncont{
+    text-align: center;
+}
+.visioncont{
+    text-align: center;
+}
+.principalnosotros{
+    margin-top: 2rem;
+}
